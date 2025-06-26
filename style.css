@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #8540B3;
+    background-color: #c4a4ce;
 }
 /*topo do site*/
 
@@ -50,13 +50,13 @@ li{
 }
 .imagem_topo img{
   border-radius: 3px;
-  margin-top: 10px;
+  margin-top: 20px;
   background-size: cover;
  
 }
 
 .linha-topo{
-    border-top: 2px solid #5a0980;
+    border-top: 2px dashed #110f11;
     width: 100%;
     margin: 5px;
     margin-top: 50px;
@@ -71,6 +71,11 @@ h1{
 }
 
 /*sobre*/
+
+.container_sobre {
+    width: 100%;
+}
+
 #sobre {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -93,6 +98,7 @@ h1{
     word-spacing:5px; /*espaçamento entre palavras*/
     font-size: 18px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     
      
 }
 
@@ -187,4 +193,96 @@ footer p a{
 footer p i{
     size: 20px;
     font-size: 30px;
+}
+
+/*para telas menores*/
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .imagem_topo img {
+        width: 100%;
+        height: auto;
+    }
+
+    #sobre { 
+        padding: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+  
+    }
+
+    #sobre p {
+      font-size: 1.1rem;
+      word-spacing: normal;
+      margin-bottom: 20px;
+    }
+    #videoPlayer{
+      width: 200px;
+      height: auto;
+    }
+
+
+    .timeline {
+        padding: 10px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .img_formacao {
+        width: 100%;
+         display: block;
+        margin: 20px auto 0;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+/*responsividade para telas maiores*/
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container_sobre {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    #sobre p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        max-width: 800px;
+    }
+
+    .timeline {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .img_formacao {
+        width: 600px;
+        display: block;
+        margin: 40px auto 0;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
 }
