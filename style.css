@@ -51,6 +51,7 @@ li{
 .imagem_topo img{
   border-radius: 3px;
   margin-top: 10px;
+  background-size: cover;
  
 }
 
@@ -87,11 +88,12 @@ h1{
 #sobre p{
     padding-top: 30%;
     padding-left: 20px;
-    text-align: center;
     overflow-wrap: break-word;
     letter-spacing:2px; /*espaçamento entre as letras*/
-    word-spacing:10px; /*espaçamento entre palavras*/
+    word-spacing:5px; /*espaçamento entre palavras*/
     font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     
 }
 
 h2{
