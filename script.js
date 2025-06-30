@@ -30,3 +30,5 @@ function iniciarPlayerDeVideos(){
 
   // Chama a função quando a página carregar
     window.onload = iniciarPlayerDeVideos;
+
+  
