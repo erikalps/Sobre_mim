@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #c4a4ce;
+    background-color: #fcfcfc;
 }
 /*topo do site*/
 
@@ -16,17 +16,21 @@ header{
 
 }
 
+
 header  .menu ul{
+    
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 100px;
     padding: 20px;
+    background-color: #520f66;
+    border-radius: 5px;
 }
 
 .item_menu a{
     text-decoration: none;
-    color:  #000;
+    color:  #fdfdfd;
     font-size: 1.2rem;
     cursor: pointer;
     
@@ -56,7 +60,7 @@ li{
 }
 
 .linha-topo{
-    border-top: 2px dashed #110f11;
+    border-top: 2px solid #520f66;
     width: 100%;
     margin: 5px;
     margin-top: 50px;
@@ -106,6 +110,7 @@ h2{
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 100px;
+    
    
 }
 
@@ -184,7 +189,7 @@ footer{
 }
 
 footer p a{
-    color: #fff;
+    color: #111010;
     text-decoration: none;
     padding: 10px;
     font-size: 16px;
